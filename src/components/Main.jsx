@@ -5,19 +5,32 @@ import Container from "./Container";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
-
   const movie = movies[Math.floor(Math.random() * movies.length)];
-  const [title, setTitle] = useState("Kubernetes");
+  const [titleIndex, setTitleIndex] = useState(0);
+  const titles = ["Kuberneters Community Days Lahore", "Get Chance of Networking", "Meet Industry Professionals"]; // Add your third word here
+  const [title, setTitle] = useState(titles[titleIndex]);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTitle((prevTitle) =>
-        prevTitle === "Kubernetes" ? "Tech" : "Kubernetes"
-      );
-    }, 2500);
+      setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
+      const targetTitle = titles[titleIndex];
+      const newTitle = Array.from(targetTitle);
+
+      // Clear the title after 2 seconds
+      setTimeout(() => {
+        setTitle("");
+      }, 1000);
+
+      newTitle.forEach((letter, index) => {
+        // Add a delay for each letter
+        setTimeout(() => {
+          setTitle((prevTitle) => prevTitle + letter);
+        }, 1000 + index * 80); // 2 seconds delay + 0.05-second delay for each letter
+      });
+    }, 1080); // 2 seconds delay + 0.05-second delay for each letter times the number of letters
 
     return () => clearInterval(interval);
-  }, []);
+  }, [titles, titleIndex]);
 
   useEffect(() => {
     axios.get(requests.requestPopular).then((response) => {
@@ -41,11 +54,9 @@ const Main = () => {
             alt={movie?.title}
           />
           <Container className="mt-[96px] relative z-[1]">
-            <h1 className="text-3xl md:text-5xl font-bold">
-              {title} Community
-              <br />
-              Days Lahore
-            </h1> 
+            <h1 className="text-3xl md:text-5xl font-bold max-w-[600px]">
+              {title}
+            </h1>
             <p className="text-gray-400 text-sm max-w-[500px] mt-[12px]">
               Experience the power of community at the Kubernetes Community Days
               in Lahore! When a diverse group of experts comes together to learn,

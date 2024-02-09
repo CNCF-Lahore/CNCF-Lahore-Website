@@ -22,24 +22,24 @@ const Navbar = () => {
   return (
     <div className="py-[32px] z-[100] w-full absolute">
       <Container className="flex items-center justify-between">
-        <div className="flex items-center justify-start gap-[64px]">
-          <div className="w-[80px] h-[80px]">
+        <div className="flex items-center justify-start gap-[42px]">
+          <div className="w-[74px] h-[74px]">
             <Link to="/">
               <img className="w-full h-full" src={logo} alt="" />
             </Link>
           </div>
-          <div className="flex justify-start items-center gap-[42px]">
+          <div className="flex justify-start items-center gap-[32px]">
             {
               links?.map((eachLink, index) => <Link key={index} to={eachLink.url} className="text-[16px] text-white opacity-80 hover:opacity-100">{eachLink.name}</Link>)
             }
           </div>
         </div>
 
-        <Link to="/signup">
+        {/* <Link to="/signup">
           <button className="bg-primary px-6 py-3 cursor-pointer rounded-[8px] text-white">
             Get in touch
           </button>
-        </Link>
+        </Link> */}
       </Container>
     </div>
   );
