@@ -1,7 +1,7 @@
 {
   "name": "netflix-react-js",
   "version": "0.1.0",
-  "homepage": "https://fireclint.github.io/netflix-react-tailwind/",
+  "homepage": "https://cncf-lahore.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -47,5 +47,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.13",
-    "tailwindcss": "^3.0.24"  }
+    "tailwindcss": "^3.0.24"
+  }
 }
