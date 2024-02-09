@@ -1,37 +1,57 @@
-name: Deploy React Application
+name: Build & deploy
 
-# This workflow is triggered on pushes to the repository.
 on:
   push:
     branches:
-      - main  # or your default branch, e.g., master
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14'  # You can specify your project's node version
+      - name: Installing Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
 
-    - name: Install dependencies
-      run: npm install
+      - name: Installing NPM packages
+        run: npm ci
 
-    - name: Build the React app
-      run: npm run build
+      - name: Building project
+        run: npm run build
 
-    # Add your deployment step here
-    # Below is an example of deploying to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages  # The branch the action should deploy to.
-        FOLDER: build  # The folder the action should deploy.
-        CLEAN: true  # Automatically remove deleted files from the deployment
+      - name: Running tests
+        run: npm run test
+
+      - name: Uploading production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Downloading artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploying to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
