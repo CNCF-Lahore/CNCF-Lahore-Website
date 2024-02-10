@@ -12,3 +12,55 @@ body {
 *, html, body {
   font-family: "Plus Jakarta Sans", sans-serif !important;
 }
+
+.swiper-slide {
+  position: relative;
+  transform: scale(1);
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+/* swiper-slide:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+} */
+
+
+:root {
+  --swiper-theme-color: #e5e5e5 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  background: #141414;
+  font-family: 'Roboto', sans-serif;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.swiper-container {
+  overflow: visible;
+}
+
+
+p {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/* Netflix like carousel */
+.splide__slide {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.splide__slide:hover {
+  transform: scale(1.1);
+}

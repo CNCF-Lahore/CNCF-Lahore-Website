@@ -38,9 +38,9 @@ const Main = () => {
       <div className="relative w-full h-[700px] text-white">
         <div className="w-full h-full flex items-center">
           <div
-            className="absolute w-full h-[700px] bg-gradient-to-r from-[#000]"
+            className="absolute w-full h-[700px] bg-gradient-to-r from-[#141414]"
             style={{
-              filter: "drop-shadow(2px 4px 6px black)",boxShadow: "rgb(0 0 0) 0px -20px 20px inset",
+              boxShadow: "#141414 0px -20px 64px 64px inset",
             }}
           ></div>
           <img
@@ -66,7 +66,7 @@ const Main = () => {
               </button>
             </div>
           </Container>
-          <div className="bg-[#000000b3] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%]">Need any help?</div>
+          <div className="bg-[#141414] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%]">Need any help?</div>
         </div>
       </div>
     </>
