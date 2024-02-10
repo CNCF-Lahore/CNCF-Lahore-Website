@@ -11,11 +11,13 @@ const Main = () => {
   ], []); // Use useMemo to initialize titles
   const [title, setTitle] = useState(titles[titleIndex]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
-      // Correctly access the current title based on updated titleIndex
-      const targetTitle = titles[(prevIndex + 1) % titles.length];
+useEffect(() => {
+  const interval = setInterval(() => {
+    setTitleIndex(prevIndex => {
+      const nextIndex = (prevIndex + 1) % titles.length;
+
+      // Now using nextIndex correctly to determine the targetTitle
+      const targetTitle = titles[nextIndex];
       const newTitle = Array.from(targetTitle);
 
       // Clear the title after 1 second
@@ -31,13 +33,16 @@ const Main = () => {
         }, 1000 + timeoutIndex * 80); // 1 second delay + 0.08-second delay for each letter
         timeoutIndex++;
       });
-    }, titles.length * 1080); // Adjusted interval duration
 
-    return () => {
-      clearInterval(interval);
-    };
-  // titleIndex is the only dependency now
-  }, [titleIndex]);
+      return nextIndex; // Return the next index for the state update
+    });
+  }, titles.length * 1080); // Adjusted interval duration based on the length of titles array
+
+  return () => {
+    clearInterval(interval);
+  };
+}, [titles.length]); // Dependency is titles.length to ensure useEffect is only re-run if the number of titles changes
+
 
   return (
     <>
