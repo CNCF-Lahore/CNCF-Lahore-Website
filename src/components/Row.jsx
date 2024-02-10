@@ -2,7 +2,6 @@ import React from "react";
 import Container from "./Container"
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import Card from "./Card";
 
 const Row = ({ title, data, rowID, className="" }) => {
   const slideLeft = () => {
@@ -42,7 +41,7 @@ const Row = ({ title, data, rowID, className="" }) => {
             {["Cricket", "Coding", "Busienss"].map((item, index) => (
               <>
               <p className="text-[14px] text-white font-semibold">{item}</p>
-              {index != 2 && <div className="w-[5px] h-[5px] bg-[rgba(255,255,255,0.4)] mt-[2px] rounded-full"></div>}
+              {index !== 2 && <div className="w-[5px] h-[5px] bg-[rgba(255,255,255,0.4)] mt-[2px] rounded-full"></div>}
               </>
             ))}
           </div>
