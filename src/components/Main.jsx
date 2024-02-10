@@ -1,11 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import requests from "../Requests";
 import Container from "./Container";
 
 const Main = () => {
-  const [movies, setMovies] = useState([]);
-  const movie = movies[Math.floor(Math.random() * movies.length)];
   const [titleIndex, setTitleIndex] = useState(0);
   const titles = ["Kuberneters Community Days Lahore", "Get Chance of Networking", "Meet Industry Professionals"]; // Add your third word here
   const [title, setTitle] = useState(titles[titleIndex]);
@@ -21,22 +18,20 @@ const Main = () => {
         setTitle("");
       }, 1000);
 
-      newTitle.forEach((letter, index) => {
+      let timeoutIndex = 0;
+      newTitle.forEach((letter) => {
         // Add a delay for each letter
         setTimeout(() => {
           setTitle((prevTitle) => prevTitle + letter);
-        }, 1000 + index * 80); // 2 seconds delay + 0.05-second delay for each letter
+        }, 1000 + timeoutIndex * 80); // 2 seconds delay + 0.08-second delay for each letter
+        timeoutIndex++;
       });
-    }, 1080); // 2 seconds delay + 0.05-second delay for each letter times the number of letters
+    }, 1080);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, [titles, titleIndex]);
-
-  useEffect(() => {
-    axios.get(requests.requestPopular).then((response) => {
-      setMovies(response.data.results);
-    });
-  }, []);
 
   return (
     <>
@@ -51,7 +46,7 @@ const Main = () => {
           <img
             className="absolute z-[-1] w-full h-full object-cover"
             src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg"
-            alt={movie?.title}
+            alt="KCD Lahore"
           />
           <Container className="mt-[96px] relative z-[1]">
             <h1 className="text-3xl md:text-5xl font-bold max-w-[600px]">
