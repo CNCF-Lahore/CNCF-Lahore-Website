@@ -11,6 +11,7 @@ const Main = () => {
   ], []); // Use useMemo to initialize titles
   const [title, setTitle] = useState(titles[titleIndex]);
 
+// eslint-disable-next-line react-hooks/exhaustive-deps
 useEffect(() => {
   const interval = setInterval(() => {
     setTitleIndex(prevIndex => {
@@ -41,7 +42,7 @@ useEffect(() => {
   return () => {
     clearInterval(interval);
   };
-}, [titles.length]); // Dependency is titles.length to ensure useEffect is only re-run if the number of titles changes
+}, [titles, titleIndex]); // Add titles to the dependency array
 
 
   return (
