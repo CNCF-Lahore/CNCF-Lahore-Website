@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
         </div>
 
-            <img src="https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg" width={46} height={46} className="object-contain rounded-[6px]" />
+            <img src="https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg" width={46} height={46} alt="Avatar" className="object-contain rounded-[6px]" />
 
         {/* <Link to="/signup">
           <button className="bg-primary px-6 py-3 cursor-pointer rounded-[8px] text-white">
