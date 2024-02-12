@@ -47,6 +47,7 @@ useEffect(() => {
 
   return (
     <>
+      
       <div className="relative w-full h-[700px] text-white">
         <div className="w-full h-full flex items-center">
           <div
@@ -57,7 +58,7 @@ useEffect(() => {
           ></div>
           <img
             className="absolute z-[-1] w-full h-full object-cover"
-            src="https://www.opti.ro/images/new-post/medium_long-tech-conferences.jpg"
+            src="https://i.ibb.co/4d2XfjH/IMG-3586.jpg"
             alt="KCD Lahore"
           />
           <Container className="mt-[96px] relative z-[1]">
