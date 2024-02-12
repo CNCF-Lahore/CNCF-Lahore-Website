@@ -5,7 +5,7 @@ const SpeakerDetailModal = ({
 }) => {
   return (
     <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.6)]'>
-        <div className="modal bg-[#141414]">
+        <div className="modal bg-[#141414] max-h-[90%]">
             <div className="modal-header">
             <video autoplay loop poster="https://www.themoviedb.org/t/p/original/fOy6SL5Zs2PFcNXwqEPIDPrLB1q.jpg">
                 <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm.2160p.vp9.webm" />
