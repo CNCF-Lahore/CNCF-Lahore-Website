@@ -5,8 +5,6 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import SpeakerDetailModal from "./SpeakerDetailModal";
 
 const Row = ({ title, data, rowID, className="" }) => {
-  const [selectedPerson, setSelectedPerson] = useState(null);
-
   const slideLeft = () => {
     var slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -45,6 +43,8 @@ const Row = ({ title, data, rowID, className="" }) => {
   };
 
   const [modalDisplay, setModalDisplay] = useState(false);
+
+    console.log("isHovered", isHovered)
 
   return (
     <>
