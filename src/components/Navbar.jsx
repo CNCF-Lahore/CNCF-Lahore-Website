@@ -18,7 +18,7 @@ const Navbar = () => {
     },
     {
       name: "Code of Conduct",
-      url: "/",
+      url: "/CodeofConduct",
     },
   ];
 
