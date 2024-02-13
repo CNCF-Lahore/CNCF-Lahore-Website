@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <Main />
-      <Row rowID="1" title="Our Speakers" data={speakers} className="mt-[120px]" />
-      <Faq className='mt-[120px]' />
+      <Row rowID="1" title="Lists" data={speakers} className="mt-[5px]" />
+      <Faq className="mt-[120px]" />
     </>
   );
 };
