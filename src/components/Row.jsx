@@ -71,8 +71,8 @@ const Row = ({ title, data, rowID, className = "" }) => {
         className="mySwiper"
       >
         {data.map((item, index) => (
-          <SwiperSlide>
-            <div className="relative group inline-block w-[314px] bg-[#141414] border border-[#292929] rounded-[12px] m-1 hpver:z-[1000]">
+          <SwiperSlide className="z-[-1] hover:z-[1000]">
+            <div className="relative group inline-block w-[314px] bg-[#141414] border border-[#292929] rounded-[12px] m-1 hover:z-[1000]">
               <img
                 className="hoveredCard mt-2 w-fit h-[180px] object-contain block rounded-[7px] relative mx-auto"
                 src={item.image}
