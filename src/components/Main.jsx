@@ -62,18 +62,18 @@ const Main = () => {
             src="https://i.ibb.co/4d2XfjH/IMG-3586.jpg"
             alt="KCD Lahore"
           />
-          <Container className="mt-[96px] relative z-[1]">
-            <h1 className="text-3xl md:text-5xl font-semibold max-w-[600px] min-h-[96px]">
+          <Container className="md:mt-[96px] relative z-[1]">
+            <h1 className="text-[32px] md:text-5xl font-semibold max-w-[600px] min-h-[68px] md:min-h-[96px]">
               {title}
-              <span className="ml-[12px] mt-[6px] w-[24px] h-[40px] bg-[rgba(255,255,255,1)] absolute"></span>
+              <span className="ml-[6px] md:ml-[12px] mt-[6px] w-[12px] md:w-[24px] h-[24px] md:h-[40px] bg-[rgba(255,255,255,1)] absolute"></span>
             </h1>
-            <p className="text-white text-[18px] max-w-[600px] mt-[24px] leading-[140%] shadow-md">
+            <p className="text-white text-[16px] md:text-[18px] max-w-[600px] mt-[24px] leading-[140%] shadow-md">
               Experience the power of community at the Kubernetes Community Days
               in Lahore! When a diverse group of experts comes together to
               learn, network, and share knowledge on all things cloud native.
             </p>
-            <div className="mt-[32px] flex">
-              <button className="bg-white text-black px-5 rounded-[6px] flex justify-center items-center gap-2 h-[48px] font-medium text-[18px]">
+            <div className="mt-[32px] flex flex-row gap-[12px] md:gap-0">
+              <button className="w-fit md:w-auto bg-white text-black px-5 rounded-[6px] flex justify-center items-center gap-2 h-[42px] md:h-[48px] font-medium text-[16px] md:text-[18px]">
                 {/* SVG and button content */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +81,11 @@ const Main = () => {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="currentColor "
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-ticket"
+                  class="lucide lucide-ticket w-[22px] h-[22px] md:w-[24px] md:h-[24px]"
                 >
                   <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
                   <path d="M13 5v2" />
@@ -94,7 +94,7 @@ const Main = () => {
                 </svg>{" "}
                 Get Your Tickets
               </button>
-              <button className="border text-white border-[#3a3838] bg-[#3a3838] px-5 ml-4 rounded-[6px] flex justify-center items-center gap-2 h-[48px] font-medium text-[18px]">
+              <button className="w-fit md:w-auto border text-white border-[#3a3838] bg-[#3a3838] px-5 md:ml-4 rounded-[6px] flex justify-center items-center gap-2 h-[42px] md:h-[48px] font-medium text-[16px] md:text-[18px]">
                 {/* SVG and button content */}
                 <svg
                   width="24"
@@ -102,7 +102,7 @@ const Main = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ltr-4z3qvp e1svuwfo1"
+                  class="ltr-4z3qvp e1svuwfo1 w-[22px] h-[22px] md:w-[24px] md:h-[24px]"
                   data-name="CircleI"
                   aria-hidden="true"
                 >
@@ -117,7 +117,7 @@ const Main = () => {
               </button>
             </div>
           </Container>
-          <div className="bg-[#141414] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%]">
+          <div className="hidden md:block bg-[#141414] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%]">
             Need any help?
           </div>
         </div>

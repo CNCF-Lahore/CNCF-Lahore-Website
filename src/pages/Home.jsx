@@ -15,11 +15,11 @@ const Home = () => {
   return (
     <>
       <Main />
-      <Sponsors />
-      <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[140px]" />
+      <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[64px]" />
       <Row rowID="1" title="Our Speakers" data={speakers} className="mt-[140px]" />
+      <Sponsors className="mt-[140px]" />
       <Faq className="mt-[120px]" />
-      <Footer />
+      <Footer className="mt-[64px] md:mt-0" />
     </>
   );
 };

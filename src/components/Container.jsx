@@ -5,7 +5,7 @@ const Container = ({
     children
 }) => {
   return (
-    <div className={`${className} px-[42px]`}>
+    <div className={`${className} px-[18px] md:px-[42px]`}>
         {children}
     </div>
   )

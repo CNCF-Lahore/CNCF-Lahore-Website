@@ -4,9 +4,12 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 
 
-const Sponsors = () => {
+const Sponsors = ({
+  className=""
+}) => {
   return (
     <Splide
+    className={className}
         style={{
             background: "#222222"
         }}

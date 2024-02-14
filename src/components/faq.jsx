@@ -45,7 +45,7 @@ function Faq({
 
   return (
     <div className={`${className}`}>
-      <Container className="flex justify-between items-start">
+      <Container className="flex flex-col md:flex-row justify-between items-start gap-[24px] md:gap-0">
         <div className="flex flex-col gap-4">
           <h1 className="text-white font-bold md:text-3xl">Frequently Asked Questions</h1>
           <p className="text-[16px] opacity-90 max-w-[480px] text-white leading-[140%]">Answers to all your BIG questions about KCD Sri Lanka 2023. Still have a question? Feel free to reach out to us!</p>
