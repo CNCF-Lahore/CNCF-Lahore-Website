@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import speakers from "../mocks/speakers";
 import { tools } from "../mocks/tools";
 import Sponsors from "../components/Sponsors";
+import About from "../components/About";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Main />
       <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[64px]" />
       <Row rowID="1" title="Our Speakers" data={speakers} className="mt-[140px]" />
+      <About className="mt-[120px]" />
       <Sponsors className="mt-[140px]" />
       <Faq className="mt-[120px]" />
       <Footer className="mt-[64px] md:mt-0" />

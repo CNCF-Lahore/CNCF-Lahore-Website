@@ -49,7 +49,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="relative w-full h-[700px] text-white">
+      <div className="relative w-full h-[600px] text-white">
         <div className="w-full h-full flex items-center">
           <div
             className="absolute w-full h-[700px] bg-gradient-to-r from-[#141414]"

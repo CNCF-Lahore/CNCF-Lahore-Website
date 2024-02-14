@@ -10,7 +10,7 @@ const Footer = ({ className = "" }) => {
   const socialLinks = [
     {
       name: "Facebook",
-      url: "https://www.facebook.com/CodieshubPK/",
+      url: "https://www.facebook.com/cloudnativepakistan/",
     },
     {
       name: "Twitter",
@@ -18,11 +18,11 @@ const Footer = ({ className = "" }) => {
     },
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/company/codieshub/mycompany/verification/",
+      url: "https://www.linkedin.com/company/kubernetes-community-days-lahore/?originalSubdomain=pk",
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/codieshub/",
+      url: "https://www.instagram.com/kcdlahore/",
     },
   ];
 
@@ -63,7 +63,7 @@ const Footer = ({ className = "" }) => {
           </div>
           <div className="flex-wrap justify-self-end max-w-[100%] md:max-w-[200px] xl:max-w-[244px] w-full flex flex-row">
             {socialLinks.map((link, index) => (
-              <Link
+              <a
                 target="_blank"
                 href={link.url}
                 key={index}
@@ -78,7 +78,7 @@ const Footer = ({ className = "" }) => {
                 `}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
