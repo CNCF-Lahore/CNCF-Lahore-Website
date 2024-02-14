@@ -7,6 +7,9 @@ import "@splidejs/splide/dist/css/splide.min.css";
 const Sponsors = () => {
   return (
     <Splide
+        style={{
+            background: "#222222"
+        }}
         options={{
           type: "loop",
           gap: "20px",
