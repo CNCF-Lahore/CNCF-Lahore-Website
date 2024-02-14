@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Main />
-      <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[140px]" />
+      <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[42px]" />
       <Row rowID="1" title="Our Speakers" data={speakers} className="mt-[140px]" />
       <Faq className="mt-[120px]" />
       <Footer />
