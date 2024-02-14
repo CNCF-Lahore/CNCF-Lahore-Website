@@ -12,7 +12,7 @@ import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <main className="max-w-[1920px] mx-auto relative">
+    <main className="">
       <AuthContextProvider>
         <Navbar />
         <Routes>
