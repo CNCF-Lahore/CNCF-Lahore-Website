@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.2462fac1.css",
-    "main.js": "/static/js/main.55150d0d.js",
+    "main.js": "/static/js/main.23dac1fc.js",
     "static/media/logo.svg": "/static/media/logo.07df0d71aa68491bbca25e45a62ac299.svg",
     "static/media/THICCCBOI-Bold.ttf": "/static/media/THICCCBOI-Bold.0cba0bd448f48fca01d3.ttf",
     "index.html": "/index.html",
     "main.2462fac1.css.map": "/static/css/main.2462fac1.css.map",
-    "main.55150d0d.js.map": "/static/js/main.55150d0d.js.map"
+    "main.23dac1fc.js.map": "/static/js/main.23dac1fc.js.map"
   },
   "entrypoints": [
     "static/css/main.2462fac1.css",
-    "static/js/main.55150d0d.js"
+    "static/js/main.23dac1fc.js"
   ]
 }
