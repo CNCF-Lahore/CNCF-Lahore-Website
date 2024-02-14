@@ -63,9 +63,9 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-.splide__slide:hover {
+/* .splide__slide:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Modal */
 #wrapper {
