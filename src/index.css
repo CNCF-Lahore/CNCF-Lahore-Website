@@ -297,7 +297,7 @@ p {
 .modal .modal-body .modal-content-first .modal-description {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .modal .modal-body .modal-content-first .modal-description span,
