@@ -31,7 +31,7 @@ const Navbar = () => {
               <img className="w-full h-full" src={logo} alt="" />
             </Link>
           </div>
-          <div className="flex justify-start items-center gap-[32px]">
+          <div className=" justify-start items-center gap-[32px] hidden sm:flex">
             {links?.map((eachLink, index) => (
               <Link
                 key={index}

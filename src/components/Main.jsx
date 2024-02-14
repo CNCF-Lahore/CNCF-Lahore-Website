@@ -49,7 +49,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="relative w-full h-[700px] text-white">
+      <div className="relative w-full h-[600px] text-white sm:h-[700px]">
         <div className="w-full h-full flex items-center">
           <div
             className="absolute w-full h-[700px] bg-gradient-to-r from-[#141414]"
@@ -62,18 +62,18 @@ const Main = () => {
             src="https://i.ibb.co/4d2XfjH/IMG-3586.jpg"
             alt="KCD Lahore"
           />
-          <Container className="mt-[96px] relative z-[1]">
-            <h1 className="text-3xl md:text-5xl font-semibold max-w-[600px] min-h-[96px]">
+          <Container className="mt-[96px] relative z-[1] sm:mt-[96px]">
+            <h1 className="text-3xl md:text-5xl font-semibold max-w-[600px] min-h-[96px] sm:text-5xl">
               {title}
-              <span className="ml-[12px] mt-[6px] w-[24px] h-[40px] bg-[rgba(255,255,255,1)] absolute"></span>
+              <span className="ml-[12px] mt-[6px] w-[17px] h-[28px] bg-[rgba(255,255,255,1)] absolute sm:w-[24px] sm:h-[40px]"></span>
             </h1>
-            <p className="text-white text-[18px] max-w-[600px] mt-[24px] leading-[140%] shadow-md">
+            <p className="text-white text-[15px] max-w-[600px] mt-[10px] leading-[140%] shadow-md sm:mt-[26px] sm:text-[18px]">
               Experience the power of community at the Kubernetes Community Days
               in Lahore! When a diverse group of experts comes together to
               learn, network, and share knowledge on all things cloud native.
             </p>
             <div className="mt-[32px] flex">
-              <button className="bg-white text-black px-5 rounded-[6px] flex justify-center items-center gap-2 h-[48px] font-medium text-[18px]">
+              <button className="bg-white text-black px-3 rounded-[6px] flex justify-center items-center gap-1 h-[48px] w-[180px] font-medium text-[13px] sm:px-5 sm:text-[18px] sm:gap-2 sm:w-[205px]">
                 {/* SVG and button content */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const Main = () => {
                 </svg>{" "}
                 Get Your Tickets
               </button>
-              <button className="border text-white border-[#3a3838] bg-[#3a3838] px-5 ml-4 rounded-[6px] flex justify-center items-center gap-2 h-[48px] font-medium text-[18px]">
+              <button className="border text-white border-[#3a3838] bg-[#3a3838] px-1 ml-4 rounded-[6px] flex justify-center items-center gap-1 h-[48px] w-[150px] font-medium text-[15px] sm:text-[18px] sm:gap-2">
                 {/* SVG and button content */}
                 <svg
                   width="24"
@@ -117,7 +117,7 @@ const Main = () => {
               </button>
             </div>
           </Container>
-          <div className="bg-[#141414] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%]">
+          <div className="bg-[#141414] py-[14px] px-[24px] border-l-[4px] border-white absolute right-0 top-[50%] transform translate-y-[-50%] hidden sm:flex">
             Need any help?
           </div>
         </div>
