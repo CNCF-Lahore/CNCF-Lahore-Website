@@ -61,7 +61,7 @@ function Faq({
                 <p className="text-white text-[16px] font-semibold">{faq.question}</p>
                 <div className="text-white font-semibold text-[20px]">{accordionStates[index] ? "-" : "+"}</div>
               </div>
-              {accordionStates[index] && <div className="mt-[20px]"><p className="text-[16px] text-white opacity-90 leading-[140%]">{faq.answer}</p></div>}
+              {accordionStates[index] && <div className="mt-[20px]"><p className="text-[16px] font-normal text-white opacity-90 leading-[140%]">{faq.answer}</p></div>}
             </div>
           ))}
         </div>
