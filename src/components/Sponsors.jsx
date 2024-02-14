@@ -35,7 +35,7 @@ const Sponsors = () => {
                 <SplideSlide
                     className="flex flex-row items-center justify-between"
                 >
-                    <img src={item} width="160px" height="80px" className="object-contain" />
+                    <img src={item} alt="Sponsor" width="160px" height="80px" className="object-contain" />
                 </SplideSlide>
             ))
         }
