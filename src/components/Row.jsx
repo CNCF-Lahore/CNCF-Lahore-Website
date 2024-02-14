@@ -9,8 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
+import Container from "./Container";
 
-const Row = ({ data }) => {
+const Row = ({ className="", title, data }) => {
   const [contentToShow, setContentToShow] = useState(
     Array(data.length).fill(false)
   );
@@ -38,7 +39,13 @@ const Row = ({ data }) => {
       {modalDisplay && (
         <SpeakerDetailModal onClose={() => setModalDisplay(false)} />
       )}
+      <Container className={className}>
+        <h2 className="text-white font-medium md:text-3xl z-[-1] relative">{title}</h2>
+      </Container>
       <Swiper
+        style={{
+          marginTop: "20px",
+        }}
         slidesPerView={6}
         spaceBetween={30}
         loop={true}
@@ -51,12 +58,18 @@ const Row = ({ data }) => {
       >
         {data.map((item, index) => (
           <SwiperSlide className="z-[-1] hover:z-[1000]">
-            <div className="relative group inline-block w-[314px] bg-[#141414] border border-[#292929] rounded-[12px] m-1 hover:z-[1000]">
-              <img
+            <div className="relative group inline-block w-[314px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
+              {
+                item?.image ? (
+                  <img
                 className="hoveredCard mt-2 w-fit h-[180px] object-contain block rounded-[7px] relative mx-auto"
                 src={item.image}
                 alt={item.title}
               />
+                ) : (
+                  <div className="w-full h-[180px] bg-[#222222]"></div>
+                )
+              }
               <div
                 key={index}
                 className={`hidden group-hover:block w-[314px] absolute top-0 scale-[1] transition-all duration-300 ease-in-out ${
@@ -66,11 +79,17 @@ const Row = ({ data }) => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
               >
-                <img
-                  className="mt-2 w-fit h-[180px] object-contain block rounded-[7px] relative mx-auto"
-                  src={item.image}
-                  alt={item.title}
-                />
+                {
+                item?.image ? (
+                  <img
+                className="hoveredCard mt-2 w-fit h-[180px] object-contain block rounded-[7px] relative mx-auto"
+                src={item.image}
+                alt={item.title}
+              />
+                ) : (
+                  <div className="w-full h-[180px] bg-[#222222]"></div>
+                )
+              }
                 {contentToShow[index] && (
                   <div className="mt-2 p-[18px] opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300">
                     <div className="flex justify-between items-center">
