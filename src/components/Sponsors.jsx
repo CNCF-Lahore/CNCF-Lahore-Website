@@ -9,20 +9,20 @@ const Sponsors = () => {
     <Splide
         options={{
           type: "loop",
-          gap: "0",
+          gap: "20px",
           drag: false,
           arrows: false,
           pagination: false,
-          perPage: 5,
+          perPage: 12,
           autoScroll: {
             pauseOnHover: false,
             pauseOnFocus: false,
             rewind: false,
-            speed: 1,
+            speed: 0.4,
           },
           breakpoints: {
-            1550: { perPage: 7 },
-            1280: { perPage: 5 },
+            1550: { perPage: 12 },
+            1280: { perPage: 10 },
             1024: { perPage: 4 },
             768: { perPage: 2 },
             380: { perPage: 1 },
@@ -30,123 +30,16 @@ const Sponsors = () => {
         }}
         extensions={{ AutoScroll }}
       >
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-        <SplideSlide
-            className="flex flex-row items-center justify-between"
-        >
-            <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-               <div className="w-full h-[140px] bg-[#222222]"></div>
-            </div>
-        </SplideSlide>
-      </Splide>
-    // <Swiper
-    //     spaceBetween={30}
-    //     centeredSlides={true}
-    //     autoplay={{
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //     }}
-    //     pagination={{
-    //     clickable: true,
-    //     }}
-    //     navigation={true}
-    //     modules={[Autoplay]}
-    //     className="mySwiper"
-    //   >
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-    //       <SwiperSlide>
-    //         <div className="relative group inline-block w-[260px] bg-[#141414] border border-[#292929] rounded-[12px] m-1">
-    //           <div className="w-full h-[140px] bg-[#222222]"></div>
-    //         </div>
-    //       </SwiperSlide>
-     
-    //   </Swiper>
+        {
+            ["/sponsors/1.png","/sponsors/2.png","/sponsors/3.png","/sponsors/4.png","/sponsors/5.png"].map((item, i) => (
+                <SplideSlide
+                    className="flex flex-row items-center justify-between"
+                >
+                    <img src={item} width="160px" height="80px" className="object-contain" />
+                </SplideSlide>
+            ))
+        }
+    </Splide>
   )
 }
 
