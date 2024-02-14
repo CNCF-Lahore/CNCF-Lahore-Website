@@ -432,3 +432,7 @@ p {
 
 @media screen and (max-width: 375px) {
 }
+
+.swiper {
+  overflow: visible !important;
+}

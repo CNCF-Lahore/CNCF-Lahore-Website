@@ -4,6 +4,7 @@ import React from "react";
 import Main from "../components/Main";
 import Row from "../components/Row";
 import Faq from "../components/faq";
+import Footer from "../components/Footer";
 
 // Mocks
 import speakers from "../mocks/speakers";
@@ -12,8 +13,9 @@ const Home = () => {
   return (
     <>
       <Main />
-      <Row rowID="1" title="Lists" data={speakers} className="mt-[5px]" />
+      <Row rowID="1" title="Our Speakers" data={speakers} className="mt-[5px]" />
       <Faq className="mt-[120px]" />
+      <Footer />
     </>
   );
 };
