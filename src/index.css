@@ -17,6 +17,7 @@ body {
   src: url(./fonts/THICCCBOI-Bold.ttf);
 }
 .swiper-slide {
+  width: auto !important;
   position: relative;
   transform: scale(1);
   transition-property: all;

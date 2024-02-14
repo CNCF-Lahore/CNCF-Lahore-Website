@@ -47,7 +47,7 @@ const Row = ({ className="", title, data }) => {
           marginTop: "20px",
         }}
         slidesPerView={6}
-        spaceBetween={30}
+        spaceBetween={16}
         loop={true}
         pagination={{
           clickable: true,
