@@ -17,12 +17,6 @@ const Home = () => {
       <Main />
       <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[64px]" />
       <div id="our-speakers">
-        {/* <Row
-          rowID="2"
-          title="Our Speakers"
-          data={speakers}
-          className="mt-[90px] speaker md:mt-[140px]"
-        /> */}
         <NoSlide
           rowID="2"
           title="Our Speakers"
