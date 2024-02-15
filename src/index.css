@@ -437,3 +437,36 @@ p {
 .swiper {
   overflow: visible !important;
 }
+
+.slide {
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.slide-content {
+  /* Your existing styles */
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.slide:hover .hover-content {
+  display: block;
+}
+
+.hover-title {
+  font-size: 16px;
+  font-weight: bold;
+}
