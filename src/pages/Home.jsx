@@ -20,7 +20,7 @@ const Home = () => {
         {/* <Row
           rowID="2"
           title="Our Speakers"
-          data={[]}
+          data={speakers}
           className="mt-[90px] speaker md:mt-[140px]"
         /> */}
         <NoSlide
