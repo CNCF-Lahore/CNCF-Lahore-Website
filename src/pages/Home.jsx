@@ -10,40 +10,41 @@ import NoSlide from "../components/NoSlide";
 import speakers from "../mocks/speakers";
 import { tools } from "../mocks/tools";
 import Sponsors from "../components/Sponsors";
+import WhyJoin from "../components/WhyJoin";
 
 const Home = () => {
   return (
-    <>
+    <main className="flex flex-col gap-[120px] w-full relative overflow-hidden">
       <Main />
 
       <Row
         rowID="1"
         title="Our Popular Tools"
         data={tools}
-        className="mt-[64px]"
       />
 
-      <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[64px]" />
-      <div id="our-speakers">
-        <NoSlide
-          rowID="2"
-          title="Our Speakers"
-          data={speakers}
-          className="mt-[90px] speaker md:mt-[140px] overflow-hidden"
-        />
+      <Row
+        rowID="2"
+        title="Our Speakers"
+        data={speakers}
+        className="overflow-hidden"
+      />
 
-        {/* <Row
-          rowID="2"
-          title="Our Speakers"
-          data={speakers}
-          className="mt-[90px] speaker md:mt-[140px] overflow-hidden"
-        /> */}
+      <NoSlide
+        rowID="2"
+        title="Our Team"
+        data={speakers}
+        className="overflow-hidden"
+      />
 
-      </div>
-      <Sponsors className="mt-[140px]" />
-      <Faq className="mt-[120px]" />
-      <Footer className="mt-[64px] md:mt-0" />
-    </>
+      <Sponsors />
+
+      <WhyJoin />
+
+      <Faq />
+
+      <Footer />
+    </main>
   );
 };
 

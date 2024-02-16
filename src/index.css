@@ -4,18 +4,55 @@
 
 body {
   background-color: #000000;
-  font-family: thiccc;
+  font-family: "thiccc";
 }
 
 *,
 html,
 body {
-  font-family: thiccc;
+  font-family: "thiccc";
 }
 @font-face {
-  font-family: thiccc;
-  src: url(./fonts/THICCCBOI-Bold.ttf);
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Black.ttf);
+  font-weight: bolder;
 }
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-ExtraBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Light.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Thin.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "thiccc";
+  src: url(./fonts/THICCCBOI-Bold.ttf);
+  font-weight: bold;
+}
+
 .swiper-slide {
   width: auto !important;
   position: relative;
@@ -469,4 +506,20 @@ p {
 .hover-title {
   font-size: 16px;
   font-weight: bold;
+}
+
+
+.storkeText {
+  -webkit-text-stroke: 2px #4c4c4c57; /* Width and color of the text stroke */
+  text-stroke: 2px #4c4c4c57;
+}
+
+/* Fallback for browsers that do not support text-stroke */
+/* Adjust the color and font properties as needed for your design */
+@supports not (-webkit-text-stroke: 2px #4c4c4c57) {
+  h1 {
+    color: #000; /* Fallback text color */
+    -webkit-text-stroke: none;
+    text-stroke: none;
+  }
 }

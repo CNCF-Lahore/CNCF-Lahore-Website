@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 import Container from "./Container";
+import SectionContainer from "./sectionContainer";
 
 const Row = ({ className="", title, data }) => {
   const [contentToShow, setContentToShow] = useState(
@@ -39,15 +40,10 @@ const Row = ({ className="", title, data }) => {
       {modalDisplay && (
         <SpeakerDetailModal onClose={() => setModalDisplay(false)} />
       )}
-      <Container className={className}>
-        <h2 className="text-white font-medium md:text-3xl z-[-1] relative">{title}</h2>
-      </Container>
+      <SectionContainer title={title}>
       {
         data?.length > 0 ? (
           <Swiper
-            style={{
-              marginTop: "20px",
-            }}
             slidesPerView={6}
             spaceBetween={16}
             loop={true}
@@ -141,23 +137,23 @@ const Row = ({ className="", title, data }) => {
                         <div className="mt-5 flex flex-col gap-3">
                           <div className="flex justify-start items-center gap-4">
                             <div className="flex justify-start items-center gap-2">
-                              <p className="text-[12px] text-[#81d855] font-light">
+                              <p className="text-[12px] text-[#81d855] font-normal">
                                 {item.title}
                               </p>
-                              <div className="px-[8px] h-[18px] border-[2px] border-solid border-[#222222] text-[12px] font-light">18</div>
+                              <div className="px-[8px] h-[18px] border-[2px] border-solid border-[#222222] text-[12px] font-normal">18</div>
                             </div>
                             <div className="flex justify-start items-center gap-2">
-                              <p className="text-[12px] text-[#757575] font-light">
+                              <p className="text-[12px] text-[#757575] font-normal">
                                 2h 18m
                               </p>
-                              <div className="px-[8px] h-[18px] border-[2px] border-solid border-[#222222] text-[12px] font-light">HD</div>
+                              <div className="px-[8px] h-[18px] border-[2px] border-solid border-[#222222] text-[12px] font-normal">HD</div>
                             </div>
                           </div>
                           <div className="flex gap-3 items-center">
                             {["Cricket", "Coding", "Busienss"].map(
                               (item, index) => (
                                 <>
-                                  <p className="text-[12px] text-white font-semibold">
+                                  <p className="text-[12px] text-white font-normal">
                                     {item}
                                   </p>
                                   {index !== 2 && (
@@ -176,13 +172,14 @@ const Row = ({ className="", title, data }) => {
             ))}
           </Swiper>
         ) : (
-          <Container className="mt-[20px]">
+          <Container>
             <div className="bg-[#222222] h-[54px] rounded-[12px] text-center flex justify-center items-center">
               Coming Soon!
             </div>
           </Container>
         )
       }
+      </SectionContainer>
     </>
   );
 };

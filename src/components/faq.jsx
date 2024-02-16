@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Container from "./Container";
+import SectionContainer from "./sectionContainer";
 
 function Faq({
   className=""
@@ -45,27 +46,24 @@ function Faq({
 
   return (
     <div className={`${className}`}>
-      <Container className="flex flex-col md:flex-row justify-between items-start gap-[24px] md:gap-0">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-white font-bold md:text-3xl">Frequently Asked Questions</h1>
-          <p className="text-[16px] opacity-90 max-w-[480px] text-white leading-[140%]">Answers to all your BIG questions about KCD Sri Lanka 2023. Still have a question? Feel free to reach out to us!</p>
-        </div>
-        
-        <div className="flex flex-col gap-[24px] w-full max-w-[600px]">
-          {faqs.map((faq, index) => (
-            <div className="rounded-[16px] p-[24px] bg-[#222222]" key={index}>
-              <div
-                className="flex justify-between cursor-pointer"
-                onClick={() => toggleAccordion(index)}
-              >
-                <p className="text-white text-[16px] font-semibold">{faq.question}</p>
-                <div className="text-white font-semibold text-[20px]">{accordionStates[index] ? "-" : "+"}</div>
+      <SectionContainer title="Frequently Asked Questions">
+        <Container>
+          <div className="mx-auto flex flex-col gap-[24px] w-full max-w-[600px]">
+            {faqs.map((faq, index) => (
+              <div className="rounded-[16px] p-[24px] bg-[#222222]" key={index}>
+                <div
+                  className="flex justify-between cursor-pointer"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <p className="text-white text-[16px] font-semibold">{faq.question}</p>
+                  <div className="text-white font-semibold text-[20px]">{accordionStates[index] ? "-" : "+"}</div>
+                </div>
+                {accordionStates[index] && <div className="mt-[20px]"><p className="text-[16px] font-normal text-white opacity-90 leading-[140%]">{faq.answer}</p></div>}
               </div>
-              {accordionStates[index] && <div className="mt-[20px]"><p className="text-[16px] font-normal text-white opacity-90 leading-[140%]">{faq.answer}</p></div>}
-            </div>
-          ))}
-        </div>
-      </Container>
+            ))}
+          </div>
+        </Container>
+      </SectionContainer>
     </div>
   );
 }

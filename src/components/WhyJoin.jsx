@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import SectionContainer from "./sectionContainer";
 const WhyJoin = () => {
   const data = [
     {
@@ -29,28 +30,25 @@ const WhyJoin = () => {
   ];
 
   return (
-    <>
-      <Container className="mt-8 md:mt-14">
-        <h2 className="text-2xl md:text-3xl mb-2">
-          Why should you Join KCD Lahore?
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <SectionContainer title="Why should you attend KCD Lahore 2024?">
+      <Container>
+        <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4">
           {data.map((item, index) => (
-            <div key={index} className="bg-[#141414] rounded-lg shadow-md p-4">
+            <div key={index} className="rounded-lg shadow-md p-[42px] lg:p-[64px] bg-[#222222]">
               <div className="flex items-start justify-start flex-col gap-5">
-                <img src={`${item.icon}`} alt="" className="h-20 md:h-32" />
-                <h2 className="text-xl md:text-2xl font-semibold">
+                <h4 className="text-[64px] font-bold storkeText text-[#14141400]">{index + 1}</h4>
+                <h2 className="text-xl md:text-2xl font-semibold opacity-90">
                   {item.title}
                 </h2>
               </div>
-              <p className="text-gray-600 mt-2 text-lg text_medium">
+              <p className="text-white opacity-70 mt-2 text-lg font-normal">
                 {item.description}
               </p>
             </div>
           ))}
         </div>
       </Container>
-    </>
+    </SectionContainer>
   );
 };
 
