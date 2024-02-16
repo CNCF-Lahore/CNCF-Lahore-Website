@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import SpeakerDetailModal from "./SpeakerDetailModal";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,26 +12,6 @@ import Container from "./Container";
 
 const NoSlide = ({ className = "", title, data }) => {
   const hasData = data && data.length > 0;
-  const [contentToShow, setContentToShow] = useState(
-    Array(data.length).fill(false)
-  );
-
-  const handleMouseEnter = (index) => {
-    setContentToShow((prev) => {
-      const newState = [...prev];
-      newState[index] = true;
-      return newState;
-    });
-  };
-
-  const handleMouseLeave = (index) => {
-    setContentToShow((prev) => {
-      const newState = [...prev];
-      newState[index] = false;
-      return newState;
-    });
-  };
-
   const [modalDisplay, setModalDisplay] = useState(false);
 
   return (
@@ -58,11 +37,11 @@ const NoSlide = ({ className = "", title, data }) => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper "
+          className="mySwiper"
         >
           <div>
             {data.map((item, index) => (
-              <SwiperSlide className="z-[-1] hover:z-[1000]">
+              <SwiperSlide key={index} className="z-[-1] hover:z-[1000]">
                 <div className="relative group inline-block w-[314px] border border-[#292929] rounded-[12px] m-1">
                   <div className="container mx-auto p-8 relative ">
                     <div className="relative flex items-center justify-between ">
