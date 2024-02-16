@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Container from "./Container";
 import { Navigation } from 'swiper/modules';
 import SectionContainer from "./sectionContainer";
 const NoSlide = ({ className = "", title, data }) => {
