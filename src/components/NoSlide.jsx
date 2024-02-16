@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Container from "./Container";
-
+import { Navigation } from 'swiper/modules';
 const NoSlide = ({ className = "", title, data }) => {
   const hasData = data && data.length > 0;
   const [modalDisplay, setModalDisplay] = useState(false);
@@ -29,7 +29,6 @@ const NoSlide = ({ className = "", title, data }) => {
           modules={[Navigation]}
           className="mySwiper"
         >
-          <div>
             {data.map((item, index) => (
               <SwiperSlide key={index} className="z-[-1] hover:z-[1000]">
                 <div className="relative group inline-block w-[314px] border border-[#292929] rounded-[12px] m-1">
@@ -62,7 +61,7 @@ const NoSlide = ({ className = "", title, data }) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              
             </SwiperSlide>
           ))}
         </Swiper>
