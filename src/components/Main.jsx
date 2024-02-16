@@ -63,7 +63,7 @@ const Main = () => {
             alt="KCD Lahore"
           />
           <Container className="md:mt-[96px] relative z-[1]">
-            <h1 className="text-[32px] md:text-5xl font-semibold max-w-[600px] min-h-[68px] md:min-h-[96px]">
+            <h1 className="text-[32px] md:text-5xl font-medium max-w-[600px] min-h-[68px] md:min-h-[96px]">
               {title}
               <span className="ml-[6px] md:ml-[12px] mt-[6px] w-[12px] md:w-[24px] h-[24px] md:h-[40px] bg-[rgba(255,255,255,1)] absolute"></span>
             </h1>

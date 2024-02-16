@@ -9,7 +9,7 @@ const SectionContainer = ({
   return (
     <section className={`${className} flex flex-col gap-[36px] w-full`}>
         <Container>
-            <h2 className="text-2xl md:text-3xl mb-2 font-bold">
+            <h2 className="text-2xl md:text-3xl mb-2 font-medium">
                 {title}
             </h2>
         </Container>
