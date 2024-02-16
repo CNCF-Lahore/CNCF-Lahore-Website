@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.afb5c0e8.css",
-    "main.js": "/static/js/main.9d3258b4.js",
+    "main.css": "/static/css/main.9772a7dc.css",
+    "main.js": "/static/js/main.5bfa85bd.js",
     "static/media/logo.svg": "/static/media/logo.07df0d71aa68491bbca25e45a62ac299.svg",
+    "static/media/THICCCBOI-Black.ttf": "/static/media/THICCCBOI-Black.4af523474b37aa94714c.ttf",
+    "static/media/THICCCBOI-Regular.ttf": "/static/media/THICCCBOI-Regular.664592113c6d2a943834.ttf",
+    "static/media/THICCCBOI-ExtraBold.ttf": "/static/media/THICCCBOI-ExtraBold.79648ed3ec506379bcbe.ttf",
+    "static/media/THICCCBOI-Medium.ttf": "/static/media/THICCCBOI-Medium.68fbafa7b3a996a568ec.ttf",
+    "static/media/THICCCBOI-SemiBold.ttf": "/static/media/THICCCBOI-SemiBold.feca90f9b2c86bf25006.ttf",
     "static/media/THICCCBOI-Bold.ttf": "/static/media/THICCCBOI-Bold.0cba0bd448f48fca01d3.ttf",
+    "static/media/THICCCBOI-Light.ttf": "/static/media/THICCCBOI-Light.86d810d6af68178b929d.ttf",
+    "static/media/THICCCBOI-Thin.ttf": "/static/media/THICCCBOI-Thin.15cddd2afff20f62b8f3.ttf",
     "index.html": "/index.html",
-    "main.afb5c0e8.css.map": "/static/css/main.afb5c0e8.css.map",
-    "main.9d3258b4.js.map": "/static/js/main.9d3258b4.js.map"
+    "main.9772a7dc.css.map": "/static/css/main.9772a7dc.css.map",
+    "main.5bfa85bd.js.map": "/static/js/main.5bfa85bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb5c0e8.css",
-    "static/js/main.9d3258b4.js"
+    "static/css/main.9772a7dc.css",
+    "static/js/main.5bfa85bd.js"
   ]
 }
