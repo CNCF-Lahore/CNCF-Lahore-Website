@@ -8,18 +8,15 @@ import CodeOfConductPage from "./pages/CodeOfConduct";
 import Navbar from "./components/Navbar";
 
 // Temp
-import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <main className="">
-      <AuthContextProvider>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/CodeofConduct" element={<CodeOfConductPage />} />
-        </Routes>
-      </AuthContextProvider>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/CodeofConduct" element={<CodeOfConductPage />} />
+      </Routes>
     </main>
   );
 }

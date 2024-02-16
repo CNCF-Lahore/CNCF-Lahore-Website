@@ -15,6 +15,14 @@ const Home = () => {
   return (
     <>
       <Main />
+
+      <Row
+        rowID="1"
+        title="Our Popular Tools"
+        data={tools}
+        className="mt-[64px]"
+      />
+
       <Row rowID="1" title="Our Popular Tools" data={tools} className="mt-[64px]" />
       <div id="our-speakers">
         <NoSlide
@@ -23,6 +31,14 @@ const Home = () => {
           data={speakers}
           className="mt-[90px] speaker md:mt-[140px] overflow-hidden"
         />
+
+        {/* <Row
+          rowID="2"
+          title="Our Speakers"
+          data={speakers}
+          className="mt-[90px] speaker md:mt-[140px] overflow-hidden"
+        /> */}
+
       </div>
       <Sponsors className="mt-[140px]" />
       <Faq className="mt-[120px]" />

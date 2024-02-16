@@ -26,41 +26,39 @@ const NoSlide = ({ className = "", title, data }) => {
           loop={true}
           pagination={{ clickable: true }}
           navigation={true}
-          modules={[]} // Removed Navigation since it's not used in this setup
+          modules={[Navigation]}
           className="mySwiper"
         >
-          {data.map((item, index) => (
-            <SwiperSlide key={index} className="z-[-1] hover:z-[1000]" style={{
-              transition: 'transform .5s ease',
-              position: 'relative'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-            >
-              <div className="relative group inline-block w-[314px] border border-[#292929] rounded-[12px] m-1">
-                <div className="container mx-auto p-8 relative ">
-                  <div className="relative flex items-center justify-between ">
-                    <div
-                      className="text-[#b20710] text-9xl font-bold z-0 transform-y-150"
-                      style={{
-                        textShadow: "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
-                      }}
-                    >
-                      {index + 1}
-                    </div>
-                    <div
-                      className={`ImgDiv absolute top-[-45px] ${index + 1 >= 10 ? "left-[120px]" : "left-[48px]"} z-10`}
-                    >
-                      {item?.image ? (
-                        <img
-                          className="h-40 w-auto object-cover rounded-[7px] relative"
-                          src={item.image}
-                          alt={item.title}
-                          style={{ transition: 'transform .5s ease' }}
-                        />
-                      ) : (
-                        <div className="w-[100px] h-[180px] bg-[#222222] rounded-[7px]"></div>
-                      )}
+          <div>
+            {data.map((item, index) => (
+              <SwiperSlide key={index} className="z-[-1] hover:z-[1000]">
+                <div className="relative group inline-block w-[314px] border border-[#292929] rounded-[12px] m-1">
+                  <div className="container mx-auto p-8 relative ">
+                    <div className="relative flex items-center justify-between ">
+                      <div
+                        className="text-[#b20710] text-9xl font-bold z-0 transform-y-150"
+                        style={{
+                          textShadow:
+                            "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
+                        }}
+                      >
+                        {index + 1}
+                      </div>
+                      <div
+                        className={`ImgDiv absolute top-[-45px] ${
+                          index + 1 >= 10 ? "left-[120px]" : "left-[48px]"
+                        } z-10`}
+                      >
+                        {item?.image ? (
+                          <img
+                            className="h-40 w-auto object-cover rounded-[7px] relative"
+                            src={item.image}
+                            alt={item.title}
+                          />
+                        ) : (
+                          <div className="w-[100px] h-[180px] bg-[#222222] rounded-[7px]"></div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
