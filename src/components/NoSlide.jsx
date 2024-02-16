@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import SpeakerDetailModal from "./SpeakerDetailModal";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { Navigation } from "swiper/modules";
 import Container from "./Container";
 
 const NoSlide = ({ className = "", title, data }) => {
@@ -16,9 +12,7 @@ const NoSlide = ({ className = "", title, data }) => {
 
   return (
     <>
-      {modalDisplay && (
-        <SpeakerDetailModal onClose={() => setModalDisplay(false)} />
-      )}
+      {modalDisplay && <SpeakerDetailModal onClose={() => setModalDisplay(false)} />}
       <Container className={className}>
         <h2 className="text-white font-medium md:text-3xl z-[-1] relative">
           {title}
@@ -26,15 +20,11 @@ const NoSlide = ({ className = "", title, data }) => {
       </Container>
       {hasData ? (
         <Swiper
-          style={{
-            marginTop: "20px",
-          }}
-          slidesPerView={6}
+          style={{ marginTop: "20px" }}
+          slidesPerView={1} // Default value, adjust based on your design needs
           spaceBetween={16}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={{ clickable: true }}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
@@ -72,9 +62,9 @@ const NoSlide = ({ className = "", title, data }) => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </div>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       ) : (
         <div className="bg-[#222222] text-center m-2">
