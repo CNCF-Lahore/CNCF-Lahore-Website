@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import Container from "./Container";
 import SectionContainer from "./sectionContainer";
 
-function Faq({
-  className=""
-}) {
+function Faq({ className = "" }) {
   const [accordionStates, setAccordionStates] = useState(
     new Array(5).fill(false)
   );
@@ -18,29 +16,30 @@ function Faq({
 
   const faqs = [
     {
-      question: "How do I get started with this app?",
+      question: "What is KCD?",
       answer:
-        "To get started with this app, simply sign up for an account and follow the on-screen instructions.",
+        "KCD stands for Kubernetes Community Days. Its a community-organized event that aims to foster the growth and sustainability of the Kubernetes and cloud-native community, with the support of the Cloud Native Computing Foundation (CNCF).",
     },
     {
-      question: "What are the system requirements?",
+      question: "When and where is KCD Lahore 2024 being held?",
       answer:
-        "The system requirements for this app vary depending on the platform. Please refer to our documentation for detailed information.",
+        "The event will be held at Trace Expert City in Lahore on the 9th of September.",
     },
     {
-      question: "Can I use this app on multiple devices?",
+      question: "Will there be pizza at the event?",
       answer:
-        "Yes, you can use this app on multiple devices. Simply log in to your account on each device.",
+        "Come and find out ;) But remember, be hungry for knowledge not for food!",
     },
     {
-      question: "How do I reset my password?",
+      question: "Why its worth to attend?",
       answer:
-        "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email.",
+        "By joining the flagship event of the Kubernetes community, you will get the opportunity to learn from the best and brightest in the cloud native community. You will also get the chance to network with the community members and experts in the field.",
     },
     {
-      question: "Where can I find help documentation?",
+      question:
+        "Do we tolerate any kind of gender discrimination or harassment?",
       answer:
-        "You can find help documentation on our website's support page. If you need further assistance, please contact our support team.",
+        "Absolutely not! We are a community that respects and values everyone. Refer our code of conduct for more information.",
     },
   ];
 
@@ -48,6 +47,10 @@ function Faq({
     <div className={`${className}`}>
       <SectionContainer title="Frequently Asked Questions">
         <Container>
+          <p className="w-[100%] md:w-[40vw] mb-10 text-lg ">
+            Answers to all your BIG questions about KCD Lahore 2024. Still have
+            a question? Feel free to reach out to us!
+          </p>
           <div className="mx-auto flex flex-col gap-[24px] w-full max-w-[600px]">
             {faqs.map((faq, index) => (
               <div className="rounded-[16px] p-[24px] bg-[#222222]" key={index}>
@@ -55,10 +58,20 @@ function Faq({
                   className="flex justify-between cursor-pointer"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <p className="text-white text-[16px] font-semibold">{faq.question}</p>
-                  <div className="text-white font-semibold text-[20px]">{accordionStates[index] ? "-" : "+"}</div>
+                  <p className="text-white text-[16px] font-semibold">
+                    {faq.question}
+                  </p>
+                  <div className="text-white font-semibold text-[20px]">
+                    {accordionStates[index] ? "-" : "+"}
+                  </div>
                 </div>
-                {accordionStates[index] && <div className="mt-[20px]"><p className="text-[16px] font-normal text-white opacity-90 leading-[140%]">{faq.answer}</p></div>}
+                {accordionStates[index] && (
+                  <div className="mt-[20px]">
+                    <p className="text-[16px] font-normal text-white opacity-90 leading-[140%]">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import logo from "./logo.svg";
 // Components
@@ -47,18 +45,19 @@ const Footer = ({ className = "" }) => {
 
   return (
     <footer
-      className={`${className} pt-[50px] lg:pt-0 border-t border-[#4F4F4F] mt-[2vw] md:mt-[5vw]`}
+      className={`${className} pt-[50px] lg:pt-0 border-t border-[#4F4F4F] mt-[2vw] md:mt-[1vw]`}
     >
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:flex flex-row justify-between items-start lg:items-center">
           <div className="max-w-[270px] xl:max-w-[370px] flex flex-col gap-[20px] xxl:gap-[32px]">
             <div className="w-[74px] h-[74px]">
-                <Link to="/">
+              <Link to="/">
                 <img className="w-full h-full" src={logo} alt="" />
-                </Link>
+              </Link>
             </div>
             <p className="text-[14px] sm:text-[16px] font-normal leading-[26px] text-white">
-            Experience the power of community at the Kubernetes Community Days in Lahore!
+              Experience the power of community at the Kubernetes Community Days
+              in Lahore!
             </p>
           </div>
           <div className="flex-wrap justify-self-end max-w-[100%] md:max-w-[200px] xl:max-w-[244px] w-full flex flex-row">
