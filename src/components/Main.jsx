@@ -1,14 +1,15 @@
 import React, { useEffect, useState, useMemo } from "react";
-// Removed unused import: import requests from "../Requests";
 import Container from "./Container";
 
 const Main = () => {
   const [titleIndex, setTitleIndex] = useState(0);
   const titles = useMemo(
     () => [
-      "Kuberneters Community Days Lahore",
-      "Get Chance of Networking",
-      "Meet Industry Professionals",
+      "Innovating",
+      "Empowering",
+      "Connecting",
+      "Transforming",
+      "Advancing",
     ],
     []
   ); // Use useMemo to initialize titles
@@ -40,7 +41,7 @@ const Main = () => {
 
         return nextIndex; // Return the next index for the state update
       });
-    }, titles.length * 1080); // Adjusted interval duration based on the length of titles array
+    }, titles.length * 580); // Adjusted interval duration based on the length of titles array
 
     return () => {
       clearInterval(interval);
@@ -49,10 +50,10 @@ const Main = () => {
 
   return (
     <>
-      <div className="relative w-full h-[700px] text-white">
-        <div className="w-full h-full flex items-center">
+      <div className="relative w-full h-[500px] md:h-[700px] text-white">
+        <div className="w-full h-full mt-[70px] flex items-center md:items-center md:mt-0">
           <div
-            className="absolute w-full h-[700px] bg-gradient-to-r from-[#141414]"
+            className="absolute w-full h-[500px] md:h-[700px] bg-gradient-to-r from-[#141414]"
             style={{
               boxShadow: "#141414 0px -20px 64px 64px inset",
             }}
@@ -63,11 +64,12 @@ const Main = () => {
             alt="KCD Lahore"
           />
           <Container className="md:mt-[96px] relative z-[1]">
-            <h1 className="text-[32px] md:text-5xl font-medium max-w-[600px] min-h-[68px] md:min-h-[96px]">
+            <h1 className="text-[28px] md:text-5xl font-medium max-w-[600px] min-h-[68px] md:min-h-[96px]">
+              Kuberneters Community Days Lahore&nbsp;
               {title}
               <span className="ml-[6px] md:ml-[12px] mt-[6px] w-[12px] md:w-[24px] h-[24px] md:h-[40px] bg-[rgba(255,255,255,1)] absolute"></span>
             </h1>
-            <p className="text-white text-[16px] md:text-[18px] max-w-[600px] mt-[24px] leading-[140%] shadow-md">
+            <p className="text-white text-[14px] md:text-[18px] max-w-[600px] mt-[24px] leading-[140%] shadow-md">
               Experience the power of community at the Kubernetes Community Days
               in Lahore! When a diverse group of experts comes together to
               learn, network, and share knowledge on all things cloud native.
