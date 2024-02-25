@@ -41,7 +41,7 @@ function Home() {
 				<span>Loading...</span>
 			) : (
 				<Sliders
-					title="지금 상영 중"
+					title="CNCF Team"
 					movies={nowPlayingData?.results}
 					query="nowPlayingData"
 					part={part}
@@ -51,7 +51,7 @@ function Home() {
 				<span>Loading...</span>
 			) : (
 				<Sliders
-					title="인기 영화"
+					title="Upcoming Events"
 					movies={popularData?.results}
 					query="popularData"
 					part={part}
@@ -61,7 +61,7 @@ function Home() {
 				<span>Loading...</span>
 			) : (
 				<Sliders
-					title="명작 영화"
+					title="Sponsors"
 					movies={topRatedData?.results}
 					query="topRatedData"
 					part={part}
@@ -71,7 +71,7 @@ function Home() {
 				<span>Loading...</span>
 			) : (
 				<Sliders
-					title="개봉 예정"
+					title="TBD"
 					movies={upcomingData?.results}
 					query="upcomingData"
 					part={part}

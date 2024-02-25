@@ -39,7 +39,7 @@ export const PlayBtn = () => {
 					fill="currentColor"
 				></path>
 			</svg>
-			<span>재생</span>
+			<span>Play</span>
 		</Btn>
 	);
 };

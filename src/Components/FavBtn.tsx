@@ -83,7 +83,7 @@ const Fav = ({ id, part, movie }: IFav) => {
 					clipRule="evenodd"
 				></path>
 			</svg>
-			<span>찜하기</span>
+			<span>Save</span>
 		</FavBtn>
 	);
 };

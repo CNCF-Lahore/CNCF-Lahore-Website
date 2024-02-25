@@ -46,6 +46,8 @@ const Video = ({ id, part, isBanner }: IGetVideo) => {
 					<iframe
 						src={`https://www.youtube.com/embed/${videoKey}?controls=0`}
 						title="YouTube video player"
+						width="10%"
+						height="10%"
 						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					></iframe>
