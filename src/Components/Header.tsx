@@ -27,10 +27,10 @@ const Col = styled(motion.div)`
 	align-items: center;
 `;
 const Logo = styled(motion.svg)`
-	margin-right: 50px;
-	width: 150px;
-	height: 100px;
-	fill: ${(props) => props.theme.white};
+	margin-right: 30px;
+	width: 200px;
+	height: 180px;
+	fill: ${(props) => props.theme.blue.dark};
 `;
 const ITems = styled(motion.ul)`
 	display: flex;
