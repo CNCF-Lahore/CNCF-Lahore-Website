@@ -59,7 +59,7 @@ const Circle = styled(motion.div)`
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
-	background-color: ${(props) => props.theme.red};
+	background-color: ${(props) => props.theme.blue.dark};
 `;
 
 const Search = styled(motion.form)`
