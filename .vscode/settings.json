@@ -1,0 +1,9 @@
+{
+	"importSorter.sortConfiguration.removeUnusedImports": true,
+	"importSorter.sortConfiguration.removeUnusedDefaultImports": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always",
+		"source.organizeImports": "always"
+	}
+}
