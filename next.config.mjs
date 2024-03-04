@@ -1,10 +1,14 @@
 // next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Assuming your GitHub Pages URL is "https://username.github.io/CNCF-Lahore.github.io"
-    // Set the basePath and assetPrefix to "/CNCF-Lahore.github.io"
+    // Adjust these settings to match your GitHub repository name
     basePath: '/CNCF-Lahore.github.io',
     assetPrefix: '/CNCF-Lahore.github.io/',
-}
+    images: {
+        loader: 'akamai',
+        path: '',
+    },
+    // Additional configurations can go here
+};
 
-export default nextConfig
+export default nextConfig;
