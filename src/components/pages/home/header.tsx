@@ -1,15 +1,20 @@
-import Link from 'next/link'
 import { ArrowRightCircleIcon, ArrowRightIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const HeaderCTA = (): JSX.Element => (
 	<div className="header_cta">
 		<Link href="/" className="btn-white inline-block">
-			Get Started <ArrowRightIcon className="h-5 w-5 inline-block" />
+			Grab Your Ticket <ArrowRightIcon className="h-5 w-5 inline-block" />
 		</Link>
 		<p className="font-bold mt-5 text-gray-600">
-			Billions of predictions per day <br />
+			Powering Global Innovation with Kubernetes: <br />
+
+			Orchestrating millions of containers daily, across the globe. <br />
+			Empowering a global community of millions of developers and professionals. <br />
+			Adopted by over 10,000 organizations worldwide, including giants like <br /> Netflix, Uber, and Google.
+			{/* Billions of predictions per day <br />
 			3000+ community members <br />
-			Used by 1000+ organizations
+			Used by 1000+ organizations */}
 		</p>
 	</div>
 )
@@ -17,11 +22,13 @@ const HeaderCTA = (): JSX.Element => (
 const HeaderBTN1 = (): JSX.Element => (
 	<div className="header_btn_1">
 		<Link
-			href="/"
+			// href="/"
+			href="https://cncf-lahore.github.io/Playground-Landing/"
 			className="bg-[--green-dark] box-shadow-lg flex flex-col border border-[--green-dark] justify-between text-[--green-bg] rounded-lg p-5"
 		>
 			<h1 className="text-lg">
-				Get <br /> Started
+				Start Kubernetes Bootcamp
+				{/* Get <br /> Your Ticket */}
 			</h1>
 			<ArrowRightCircleIcon className="h-5 mt-5 ml-auto w-5 inline-block" />
 		</Link>
@@ -31,11 +38,12 @@ const HeaderBTN1 = (): JSX.Element => (
 const HeaderBTN2 = (): JSX.Element => (
 	<div className="header_btn_2">
 		<Link
-			href="/"
+			// href="/"
+			href="https://cncf-lahore.github.io/Playground-Landing/"
 			className="bg-[--blue-dark]  box-shadow-lg border border-[--blue-dark] flex flex-col justify-between text-[--blue-bg] rounded-lg p-5"
 		>
 			<h1 className="text-lg">
-				Start a free <br /> trial
+				Kubernetes Playground
 			</h1>
 			<ArrowRightCircleIcon className="h-5 w-5 mt-5 ml-auto inline-block" />
 		</Link>
@@ -46,13 +54,15 @@ export const HomeHeader = (): JSX.Element => (
 	<div className="px-5">
 		<header className="parent container bg-[--blue-bg] h-[70vh] border py-20 my-10 border-[--blue-dark]">
 			<div className="header_title">
-				<h1 className="text-5xl font-bold text-emerald-900">Build, Ship, Scale</h1>
-				<h1 className="text-5xl font-bold text-[--blue-dark]">Generative AI</h1>
-				<h1 className="text-5xl font-bold text-emerald-900">Applications</h1>
+			 
+				<h1 className="text-5xl font-bold text-emerald-900">Empowering Cloud Natives:</h1>
+				<h1 className="text-5xl font-bold text-[--blue-dark]">Innovate, Integrate, Accelerate</h1>
+				{/* <h1 className="text-5xl font-bold text-emerald-900">Applications</h1> */}
 			</div>
 			<div className="header_description">
 				<p className="text-gray-600 font-bold desciption">
-					BentoML is the platform for <br /> software engineers to build AI products.
+					Unlock the Power of Kubernetes: Innovate, Connect, Transform at KCD Lahore 2024.
+					{/* BentoML is the platform for <br /> software engineers to build AI products. */}
 				</p>
 			</div>
 			<HeaderCTA />
