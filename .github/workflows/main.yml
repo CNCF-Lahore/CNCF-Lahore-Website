@@ -17,4 +17,4 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} # uses the secret stored in GitHub
         run: |
-          vercel --token $VERCEL_TOKEN --confirm --name cncf-lahore --prod
+          vercel --token $VERCEL_TOKEN --confirm --yes cncf-lahore --prod
