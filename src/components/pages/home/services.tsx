@@ -8,25 +8,30 @@ export const HomeServices = (): JSX.Element => (
 			<div className="flex md:flex-row items-center flex-col gap-10">
 				<div className="md:w-1/2 w-full">
 					<h1 className="text-xl font-bold text-[--blue-dark]">KCD Lahore</h1>
-					<h2 className="text-4xl my-5 font-bold text-[--green-dark]">Kubernetes Community Days Lahore</h2>
+					<h2 className="text-4xl my-5 font-bold text-[--green-dark]">How to get started with our Kubernetes Bootcamp</h2>
 					<p className="text-gray-600 font-semibold mb-20">
-						Experience the power of community at the Kubernetes Community Days in Lahore! When a diverse group of
-						experts comes together to learn, network, and share knowledge on all things cloud native.
+					Kickstart your Kubernetes journey with our Bootcamp. Learn to set up, deploy applications, and grasp essential concepts like pods and services. Ideal for beginners, it's your gateway to mastering the Kubernetes ecosystem.
 					</p>
 					<Card.Service
-						title="01. Modals"
-						description="Manage and version all your models in an open and standardized format"
+						title="Step 01"
+						description="Join our Kubernetes Bootcamp"
 						color="green"
+						btnTitle='Go'
+						url="https://kubecamp.kcdlahore.org/"
 					/>
 					<Card.Service
-						title="02. Modals"
-						description="Manage and version all your models in an open and standardized format"
+						title="Step 02"
+						description="Active your Kubernetes Playground"
 						color="blue"
+						btnTitle='Go'
+						url="https://playground.kcdlahore.org/"
 					/>
 					<Card.Service
-						title="03. Modals"
-						description="Manage and version all your models in an open and standardized format"
+						title="Step 03"
+						description="Get your Digital badge by completing a quiz"
 						color="violet"
+						btnTitle='Go'
+						url="https://kubecamp.kcdlahore.org/update-your-app/quiz"
 					/>
 				</div>
 				<div className="md:w-1/2 w-full">

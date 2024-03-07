@@ -7,7 +7,7 @@ export type CTAProps = {
 }
 
 export const CTAButton = ({ title, url }: CTAProps): JSX.Element => (
-	<Link href={url} className="btn-white inline-block">
+	<Link href={url} className="btn-white inline-block" target='_blank'>
 		{title} <ArrowRightIcon className="h-5 w-5 inline-block" />
 	</Link>
 )
