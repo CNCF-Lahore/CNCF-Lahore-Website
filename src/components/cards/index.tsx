@@ -1,4 +1,5 @@
-import { CardProps, ServiceCard } from './service'
+import { ServiceCard, ServiceCardProps } from './service'
+import { TestimonialCard, TestimonialCardProps } from './testimonial'
 import { Children } from 'react'
 
 export const Card = ({ children }: { children: any }) => {
@@ -11,9 +12,14 @@ export const Card = ({ children }: { children: any }) => {
 	return <>{subComponents.map((component) => component)}</>
 }
 
-const Service = ({ title, description, color, btnTitle = undefined, url = undefined }: CardProps) => (
+const Service = ({ title, description, color, btnTitle = undefined, url = undefined }: ServiceCardProps) => (
 	<ServiceCard title={title} description={description} color={color} btnTitle={btnTitle} url={url} />
 )
 Card.Service = Service
+
+const Testimonial = ({ title, subtitle, span }: TestimonialCardProps) => (
+	<TestimonialCard title={title} span={span} subtitle={subtitle} />
+)
+Card.Testimonial = Testimonial
 
 export default Card

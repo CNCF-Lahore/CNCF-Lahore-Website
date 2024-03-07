@@ -17,7 +17,7 @@ export default function RootLayout({
 			<body className={twMerge(sans_serif.variable)}>
 				<Layout.Navbar />
 				{children}
-				{/* <Layout.Footer /> */}
+				<Layout.Footer />
 			</body>
 		</html>
 	)

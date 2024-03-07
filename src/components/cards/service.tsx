@@ -2,7 +2,7 @@ import { LinkProps } from 'next/link'
 import { twMerge } from 'tailwind-merge'
 import Button from '../buttons'
 
-export type CardProps = {
+export type ServiceCardProps = {
 	title: string
 	description: string
 	color: 'green' | 'blue' | 'violet'
@@ -16,7 +16,7 @@ export const ServiceCard = ({
 	color,
 	btnTitle = undefined,
 	url = undefined
-}: CardProps): JSX.Element => {
+}: ServiceCardProps): JSX.Element => {
 	// switch case for colors
 	let borderColor = ''
 	let bgColor = ''

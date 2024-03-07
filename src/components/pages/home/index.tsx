@@ -2,7 +2,9 @@ import { HomeHeader } from './header'
 import { HomePartners } from './partners'
 import { HomeServices } from './services'
 import { HomeSpeakers } from './speakers'
+import { HomeSplit } from './split'
 import { HomeSponsors } from './sponsors'
+import { HomeTestimonials } from './testimonials'
 import { Children } from 'react'
 
 export const HomeComponents = ({ children }: { children: any }) => {
@@ -29,5 +31,11 @@ HomeComponents.Partners = Partners
 
 const Sponsors = () => <HomeSponsors />
 HomeComponents.Sponsors = Sponsors
+
+const Split = () => <HomeSplit />
+HomeComponents.Split = Split
+
+const Testimonials = () => <HomeTestimonials />
+HomeComponents.Testimonials = Testimonials
 
 export default HomeComponents

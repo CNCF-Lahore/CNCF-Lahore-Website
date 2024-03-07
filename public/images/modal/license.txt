@@ -1,0 +1,11 @@
+Model Information:
+* title:	Badshahi_mosque
+* source:	https://sketchfab.com/3d-models/badshahi-mosque-0a8593dd909e4e42b68d34b914f83fca
+* author:	tourisminpakistan (https://sketchfab.com/tourismpakistan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Badshahi_mosque" (https://sketchfab.com/3d-models/badshahi-mosque-0a8593dd909e4e42b68d34b914f83fca) by tourisminpakistan (https://sketchfab.com/tourismpakistan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

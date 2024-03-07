@@ -3,8 +3,8 @@ import Card from '@/components/cards'
 
 // if btnTitle is provided, url should also be provided and vice versa
 export const HomeServices = (): JSX.Element => (
-	<div className="bg-white my-20 py-20">
-		<div className="container md:px-0">
+	<div className="bg-white my-20 py-20 px-5">
+		<div className="container">
 			<div className="flex md:flex-row items-center flex-col gap-10">
 				<div className="md:w-1/2 w-full">
 					<h1 className="text-xl font-bold text-[--blue-dark]">KCD Lahore</h1>

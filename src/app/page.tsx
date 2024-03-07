@@ -8,6 +8,8 @@ export default function Home() {
 			<HomeComponents.Services />
 			<HomeComponents.Speakers />
 			<HomeComponents.Sponsors />
+			<HomeComponents.Split />
+			<HomeComponents.Testimonials />
 		</main>
 	)
 }
