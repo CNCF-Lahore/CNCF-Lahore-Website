@@ -7,9 +7,9 @@ export default function Home() {
 			<HomeComponents.Partners />
 			<HomeComponents.Services />
 			<HomeComponents.Speakers />
-			<HomeComponents.Sponsors />
-			<HomeComponents.Split />
-			<HomeComponents.Testimonials />
+			{/* <HomeComponents.Sponsors /> */}
+			{/* <HomeComponents.Split /> */}
+			{/* <HomeComponents.Testimonials /> */}
 		</main>
 	)
 }
