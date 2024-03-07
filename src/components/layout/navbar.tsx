@@ -7,7 +7,7 @@ export const NavbarComponent = (): JSX.Element => (
 			<Link href={'/'} className="brand">
 				KCD Lahore
 			</Link>
-			<ul className="md:flex flex-row justify-between gap-10 hidden">
+			{/* <ul className="md:flex flex-row justify-between gap-10 hidden">
 				<li>
 					<Link href="/">Home</Link>
 				</li>
@@ -17,9 +17,9 @@ export const NavbarComponent = (): JSX.Element => (
 				<li>
 					<Link href="/">Contact</Link>
 				</li>
-			</ul>
-			<Link href={'/'} className="btn btn-blue font-normal">
-				Register <ArrowRightIcon className="h-5 w-5 inline-block" />
+			</ul> */}
+			<Link href={'https://chat.whatsapp.com/FnYfIrjD0pz2QNsBT3llYB'} className="btn btn-blue font-normal">
+				Join Our Community <ArrowRightIcon className="h-5 w-5 inline-block" />
 			</Link>
 		</nav>
 	</div>
