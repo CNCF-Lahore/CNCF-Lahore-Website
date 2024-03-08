@@ -1,20 +1,13 @@
-"use client";
-
-import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 
 interface HeroProps {
   images: string[];
 }
+
 export function Hero({ images }: HeroProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideInterval = useRef<NodeJS.Timeout | null>(null);
-
-  const goToPrevious = () => {
-    const isFirstImage = currentIndex === 0;
-    const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
 
   const goToNext = () => {
     const isLastImage = currentIndex === images.length - 1;
@@ -24,9 +17,7 @@ export function Hero({ images }: HeroProps) {
 
   const startSlideShow = () => {
     stopSlideShow();
-    slideInterval.current = setInterval(() => {
-      goToNext();
-    }, 3000);
+    slideInterval.current = setInterval(goToNext, 3000);
   };
 
   const stopSlideShow = () => {
@@ -37,7 +28,7 @@ export function Hero({ images }: HeroProps) {
 
   useEffect(() => {
     startSlideShow();
-    return () => stopSlideShow();
+    return stopSlideShow;
   }, [currentIndex]);
 
   return (
@@ -56,14 +47,11 @@ export function Hero({ images }: HeroProps) {
               height={400}
               width={400}
               className="object-contain"
-              
               priority={index === currentIndex}
             />
           </div>
         ))}
-        
       </div>
-      
     </div>
   );
 }
