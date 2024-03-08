@@ -1,7 +1,3 @@
-// At the very top of your file, add the `use client` directive
-// This line is a directive for Next.js to treat this component as a Client Component
-use client;
-
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
@@ -32,18 +28,16 @@ export function Hero({ images }: HeroProps) {
 
   useEffect(() => {
     startSlideShow();
-    return stopSlideShow;
-  }, [currentIndex]);
+    return () => stopSlideShow(); // This ensures the interval is cleared when the component unmounts or updates
+  }, [currentIndex]); // Depend on `currentIndex` to restart the slideshow when it changes
 
   return (
     <div className="relative">
-      <div className="relative text-white h-38 max-w-80  md:w-96 flex items-center justify-center text-center right-4">
+      <div className="relative text-white h-38 max-w-80 md:w-96 flex items-center justify-center text-center right-4">
         {images.map((img, index) => (
           <div
             key={img}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"}`}
           >
             <Image
               src={img}
@@ -51,7 +45,7 @@ export function Hero({ images }: HeroProps) {
               height={400}
               width={400}
               className="object-contain"
-              priority={index === currentIndex}
+              priority={index === currentIndex} // Load the current image with priority
             />
           </div>
         ))}
