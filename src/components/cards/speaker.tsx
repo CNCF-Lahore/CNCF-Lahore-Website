@@ -18,7 +18,7 @@ type SpeakerCardProps = {
 export const SpeakerCard = ({ name, role, img, socials = undefined }: SpeakerCardProps): JSX.Element => {
 	return (
 		<div className="bg-white rounded-xl border border-[--green-dark]">
-			<div className="aspect-h-9 aspect-w-16 w-full overflow-hidden rounded-t-xl bg-gray-200">
+			<div className="aspect-h-15 aspect-w-16 w-full overflow-hidden rounded-t-xl bg-gray-200">
 				<Image
 					src={img}
 					alt={name}
