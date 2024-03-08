@@ -1,11 +1,12 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	output: "export",  // <=== enables static exports
-	basePath: "/kcdlahore",
+  output: "export",  // <=== enables static exports
+  basePath: "/kcdlahore",
   reactStrictMode: true,
-	images: {
+  images: {
     unoptimized: true,
   }
-}
+};
 
-export default nextConfig
+module.exports = nextConfig;
