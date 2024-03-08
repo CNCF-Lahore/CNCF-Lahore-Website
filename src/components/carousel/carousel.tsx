@@ -1,3 +1,7 @@
+// At the very top of your file, add the `use client` directive
+// This line is a directive for Next.js to treat this component as a Client Component
+use client;
+
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
