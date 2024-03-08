@@ -18,7 +18,7 @@ export const NavbarComponent = (): JSX.Element => (
 					<Link href="/">Contact</Link>
 				</li>
 			</ul> */}
-			<Link href={'https://chat.whatsapp.com/FnYfIrjD0pz2QNsBT3llYB'} className="btn btn-blue font-normal">
+			<Link href={'https://chat.whatsapp.com/FnYfIrjD0pz2QNsBT3llYB'} target='_blank' className="btn btn-blue font-normal">
 				Join Our Community <ArrowRightIcon className="h-5 w-5 inline-block" />
 			</Link>
 		</nav>
