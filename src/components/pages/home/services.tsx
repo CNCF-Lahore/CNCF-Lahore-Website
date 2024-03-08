@@ -38,8 +38,8 @@ export const HomeServices = (): JSX.Element => (
 					<Image
 						src="/images/logo.png"
 						className="block md:ml-auto mx-auto"
-						width="500"
-						height="500"
+						width="300"
+						height="300"
 						alt="KCD Lahore"
 					/>
 				</div>

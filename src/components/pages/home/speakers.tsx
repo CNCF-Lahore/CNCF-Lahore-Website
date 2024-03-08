@@ -23,27 +23,33 @@ export const HomeSpeakers = () => {
 				/>
 				<SpeakerCard
 					name="Moez Mustafa"
-					role="Had Organizer | AR Expert"
+					role="Head Organizer | AR Expert"
 					img="/images/speakers/moez-mustafa.png"
 					socials={{ linkedin: 'https://www.linkedin.com/in/moeezmustafa/' }}
 				/>
 				<SpeakerCard
 					name="Zaid Bari"
-					role="Development Lead Turkey Organizer"
+					role="Organizer | Development Lead, Turkey"
 					img="/images/speakers/zaid-bari.jpeg"
 					socials={{ linkedin: 'https://www.linkedin.com/in/itszbari/' }}
 				/>
 				<SpeakerCard
 					name="Daanyal (Rahila) Memon"
-					role="Organizer"
+					role="Organizer | Web Development Lead"
 					img="/images/speakers/daanyal-rahila-memon.png"
 					socials={{ linkedin: 'https://www.linkedin.com/in/daanyal-rahila-memon/' }}
 				/>
 				<SpeakerCard
 					name="Afnan Tasawar"
-					role="Canada Ontario Content Writer"
+					role="Content Writer | Canada Ontario"
 					img="/images/speakers/afnan-sheikh.jpeg"
 					socials={{ linkedin: 'https://www.linkedin.com/in/afnan-sheikh-34611a19a/' }}
+				/>
+				<SpeakerCard
+					name="Muhammad Bilal"
+					role="Web Development Co-Lead"
+					img="/images/speakers/bilal.png"
+					socials={{ linkedin: 'https://www.linkedin.com/in/mbilal56/' }}
 				/>
 				<SpeakerCard
 					name="Waleed"
@@ -56,12 +62,6 @@ export const HomeSpeakers = () => {
 					role="Email Marketing Team Member"
 					img=""
 					socials={{ linkedin: 'https://www.linkedin.com/in/talvasto/' }}
-				/>
-				<SpeakerCard
-					name="Muhammad Bilal"
-					role="VSHN_ch"
-					img="/images/speakers/bilal.png"
-					socials={{ linkedin: 'https://www.linkedin.com/in/mbilal56/' }}
 				/>
 			</div>
 		</div>
