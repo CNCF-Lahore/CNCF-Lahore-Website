@@ -1,12 +1,28 @@
 import Link from 'next/link'
+import { Linkedin, Instagram } from 'lucide-react'
+import threads from '@/images/socials/threads-icon.svg'
 import { ArrowRightCircleIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 export const FooterComponent = (): JSX.Element => (
 	<div className="px-5">
 		<footer className="container bg-[--blue-bg] border py-20 px-10 rounded-b-none border-[--blue-dark] min-h-[70vh]">
-			<div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-				<div className="pb-20 md-pb-10 col-span-1">
+			<div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+				<div className="pb-0 md-pb-10 col-span-1">
 					<h2 className="text-lg">Stay informed on feature releases, product roadmap, and community events!</h2>
+					<div className='flex max-sm:h-28 max-sm:w-28 item-center space-x-10 mt-8 sm:mt-52'>
+						<Link href={'https://www.linkedin.com/company/kubernetes-community-days-lahore/'} target='_blank'>
+							<Linkedin color='#000000' size={60}/>
+						</Link>
+
+						<Link href={'https://www.instagram.com/kcdlahore/'} target='_blank'>
+							<Instagram color='#000000' size={60}/>
+						</Link>
+
+						<Link href={'https://www.threads.net/@kcdlahore'} target='_blank'>
+							<Image src={threads} alt='https://www.threads.net/@kcdlahore' height={50} width={50} />
+						</Link>
+					</div>
 				</div>
 				<div className="col-span-1">
 					<div className="grid  md:grid-cols-3 grid-cols-1 gap-10">
