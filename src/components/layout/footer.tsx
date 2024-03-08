@@ -25,10 +25,11 @@ export const FooterComponent = (): JSX.Element => (
 					</div>
 				</div>
 				<div className="col-span-1">
-					<div className="grid  md:grid-cols-3 grid-cols-1 gap-10">
+					<div className="grid md:grid-cols-3 grid-cols-1 gap-10">
 						<div className="md:col-span-2">
 							<Link
-								href="/"
+								href="https://cncflahore.slack.com/"
+								target='_blank'
 								className="bg-[--violet-bg] box-shadow-lg flex-1 border border-[--violet-bg] flex flex-col justify-between text-[--green-dark] rounded-lg p-5"
 							>
 								<h1 className="text-lg">
@@ -38,7 +39,7 @@ export const FooterComponent = (): JSX.Element => (
 								<ArrowRightCircleIcon className="h-5 w-5 mt-5 ml-auto inline-block" />
 							</Link>
 						</div>
-						<div className="">
+						{/* <div className="">
 							<Link
 								href="/"
 								className="bg-[--blue-dark] box-shadow-lg flex-1 border border-[--blue-dark] flex flex-col justify-between text-[--blue-bg] rounded-lg p-5"
@@ -60,10 +61,11 @@ export const FooterComponent = (): JSX.Element => (
 								</h1>
 								<ArrowRightCircleIcon className="h-5 w-5 mt-5 ml-auto inline-block" />
 							</Link>
-						</div>
+						// </div> */}
 						<div className="md:col-span-2">
 							<Link
-								href="/"
+								href="https://mail.googlecloudlahore.com/subscription/form"
+								target='_blank'
 								className="bg-white box-shadow-lg flex-1 border border-[--green-dark] flex flex-col justify-between text-[--green-dark] rounded-lg p-5"
 							>
 								<h1 className="text-lg">
