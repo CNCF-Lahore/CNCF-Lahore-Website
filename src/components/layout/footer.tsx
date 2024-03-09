@@ -28,7 +28,7 @@ export const FooterComponent = (): JSX.Element => (
 					<div className="grid md:grid-cols-3 grid-cols-1 gap-10">
 						<div className="md:col-span-2">
 							<Link
-								href="https://cncflahore.slack.com/"
+								href="https://join.slack.com/t/cncflahore/shared_invite/zt-2egtejr9w-pAcNZ0YG8rPtXUyhoIelXQ"
 								target='_blank'
 								className="bg-[--violet-bg] box-shadow-lg flex-1 border border-[--violet-bg] flex flex-col justify-between text-[--green-dark] rounded-lg p-5"
 							>
