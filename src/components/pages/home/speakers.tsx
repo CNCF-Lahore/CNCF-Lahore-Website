@@ -54,14 +54,26 @@ export const HomeSpeakers = () => {
 				<SpeakerCard
 					name="Waleed"
 					role="Development Team Member"
-					img=""
+					img="/images/speakers/waleed.jpeg"
 					socials={{ linkedin: 'https://www.linkedin.com/in/waleedzafar68/' }}
 				/>
 				<SpeakerCard
 					name="Haris"
 					role="Email Marketing Team Member"
 					img=""
-					socials={{ linkedin: 'https://www.linkedin.com/in/talvasto/' }}
+					socials={{ linkedin: 'https://www.linkedin.com/in/harris-shafiq/' }}
+				/>
+				<SpeakerCard
+					name="Syed Mouaaz Farrukh"
+					role=""
+					img="/images/speakers/mouaaz.jpeg"
+					socials={{ linkedin: 'https://www.linkedin.com/in/syed-mouaaz-farrukh/' }}
+				/>
+				<SpeakerCard
+					name="Samsor Rahman"
+					role=""
+					img="/images/speakers/samsor.jpeg"
+					socials={{ linkedin: 'https://www.linkedin.com/in/samsor-rahman18//' }}
 				/>
 			</div>
 		</div>
