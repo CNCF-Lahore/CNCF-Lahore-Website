@@ -57,7 +57,7 @@ export const HomeHeader = (): JSX.Element => (
 				</div>
 				
 				<div>
-					<Button.CTA title="Grab Your Ticket" url="https://www.meetup.com/cncf-lahore/events/299677775/" />
+					<Button.CTA title="Grab Your Ticket" url="https://www.meetup.com/cncf-lahore/events/299706811/" />
 					<p className="font-bold mt-5 text-gray-600">
 						{/* Orchestrating millions of containers daily, across the globe. <br />
 						Empowering a global community of millions of developers and professionals. <br /> */}
