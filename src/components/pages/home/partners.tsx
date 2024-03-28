@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]
 export const HomePartners = () => {
 	return (
 		<div className="container px-5 md:px-5 mt-20">
