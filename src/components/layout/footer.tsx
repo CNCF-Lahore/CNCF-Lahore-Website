@@ -64,7 +64,7 @@ export const FooterComponent = (): JSX.Element => (
 						// </div> */}
 						<div className="md:col-span-2">
 							<Link
-								href="https://mail.googlecloudlahore.com/subscription/form"
+								href="https://postman.gdgcloudlahore.org/subscription/form"
 								target='_blank'
 								className="bg-white box-shadow-lg flex-1 border border-[--green-dark] flex flex-col justify-between text-[--green-dark] rounded-lg p-5"
 							>
