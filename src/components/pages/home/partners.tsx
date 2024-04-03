@@ -1,3 +1,4 @@
+import Button from '@/components/buttons'
 import Image from 'next/image'
 
 const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]
@@ -22,6 +23,9 @@ export const HomePartners = () => {
 						/>
 					</div>
 				))}
+			</div>
+			<div className='text-center'>
+			<Button.CTA title='Become a Sponsor' url={''} />
 			</div>
 		</div>
 	)
