@@ -25,7 +25,7 @@ export const HomePartners = () => {
 				))}
 			</div>
 			<div className='text-center'>
-			<Button.CTA title='Become a Sponsor' url={''} />
+			<Button.CTA title='Become a Sponsor' url={'https://forms.gle/9vG1bYH3Yhmr8y4A6'} />
 			</div>
 		</div>
 	)
