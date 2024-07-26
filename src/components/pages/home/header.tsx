@@ -47,7 +47,7 @@ export const HomeHeader = (): JSX.Element => (
 				<div>
 					<h1 className="md:text-5xl text-4xl font-bold text-emerald-900">Empowering Cloud Natives:</h1>
 					<h1 className="md:text-5xl text-4xl font-bold text-[--blue-dark]">Innovate, Integrate, Accelerate</h1>
-					{/* <h1 className="md:text-5xl text-4xl font-bold text-emerald-900">Applications</h1> */}
+				
 				</div>
 				<div>
 					<p className="text-gray-600 font-bold desciption">
