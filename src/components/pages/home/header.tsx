@@ -57,14 +57,14 @@ export const HomeHeader = (): JSX.Element => (
 				</div>
 				
 				<div>
-					<Button.CTA title="Grab Your Ticket" url="https://www.meetup.com/cncf-lahore/events/299706813/" />
+					<Button.CTA title="Grab Your Ticket" url="https://www.festivelabs.com/events/666b2b33ff82cd820d24e9fa?KCD%20%7C%20Kubernetes%20Community%20Day%20Lahore%202024" />
 					<p className="font-bold mt-5 text-gray-600">
-						{/* Orchestrating millions of containers daily, across the globe. <br />
-						Empowering a global community of millions of developers and professionals. <br /> */}
+						Orchestrating millions of containers daily, across the globe. <br />
+						Empowering a global community of millions of developers and professionals. <br />
 						Adopted by over 10,000 organizations worldwide, including giants like <br /> Netflix, Uber, and Google.
-						{/* Billions of predictions per day <br />
+						 Billions of predictions per day <br />
 						3000+ community members <br />
-						Used by 1000+ organizations */}
+						Used by 1000+ organizations
 					</p>
 				</div>
 			</div>

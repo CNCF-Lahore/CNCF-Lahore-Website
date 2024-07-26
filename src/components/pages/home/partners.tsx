@@ -25,7 +25,7 @@ export const HomePartners = () => {
 				))}
 			</div>
 			<div className='text-center'>
-			<Button.CTA title='Become a Sponsor' url={'https://forms.gle/9vG1bYH3Yhmr8y4A6'} />
+			<Button.CTA title='Become a Speaker' url={'https://sessionize.com/kcd-lahore-2024/'} />
 			</div>
 		</div>
 	)
